@@ -1,0 +1,195 @@
+/* Local Font Declarations */
+
+/* Plus Jakarta Sans - Regular */
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('/Fonts/PlusJakartaSans/PlusJakartaSans-Regular.woff2') format('woff2'),
+        url('/Fonts/PlusJakartaSans/PlusJakartaSans-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Plus Jakarta Sans - Medium */
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('/Fonts/PlusJakartaSans/PlusJakartaSans-Medium.woff2') format('woff2'),
+        url('/Fonts/PlusJakartaSans/PlusJakartaSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Plus Jakarta Sans - SemiBold */
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('/Fonts/PlusJakartaSans/PlusJakartaSans-SemiBold.woff2') format('woff2'),
+        url('/Fonts/PlusJakartaSans/PlusJakartaSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Plus Jakarta Sans - Bold */
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('/Fonts/PlusJakartaSans/PlusJakartaSans-Bold.woff2') format('woff2'),
+        url('/Fonts/PlusJakartaSans/PlusJakartaSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Plus Jakarta Sans - SemiBold Italic */
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('/Fonts/PlusJakartaSans/PlusJakartaSans-SemiBoldItalic.woff2') format('woff2'),
+        url('/Fonts/PlusJakartaSans/PlusJakartaSans-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Plus Jakarta Sans - Bold Italic */
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('/Fonts/PlusJakartaSans/PlusJakartaSans-BoldItalic.woff2') format('woff2'),
+        url('/Fonts/PlusJakartaSans/PlusJakartaSans-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Inter - if you have local files, add @font-face declarations here */
+/* Dancing Script - if you have local files, add @font-face declarations here */
+/* For now, keeping Google Fonts for Inter and Dancing Script */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@300..700&display=swap');
+
+@import "tailwindcss";
+
+:root {
+    --background: 260 50% 10%;
+    /* Deep Blue/Purple */
+    --foreground: 0 0% 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: radial-gradient(circle at 50% 0%, #2a1b4e 0%, #0d0b21 100%);
+    color: #fff;
+    min-height: 100vh;
+}
+
+.font-script {
+    font-family: 'Dancing Script', cursive;
+}
+
+/* Typography System - Plus Jakarta Sans */
+
+/* 1. Title Styles */
+.text-extra-large {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    /* Semi Bold */
+    font-size: 50px;
+    line-height: auto;
+    letter-spacing: 0;
+}
+
+.text-extra-large-italic {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    /* Bold */
+    font-size: 46px;
+    font-style: italic;
+    line-height: auto;
+    letter-spacing: 0;
+}
+
+.text-sub-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    /* Semi Bold */
+    font-size: 36px;
+    line-height: auto;
+    letter-spacing: 0;
+}
+
+/* 2. Subhead Styles */
+.text-mid-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    /* Semi Bold */
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 0;
+}
+
+.text-medium-italic {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    /* Medium */
+    font-size: 24px;
+    font-style: italic;
+    line-height: 26px;
+    letter-spacing: 0;
+}
+
+.text-medium {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    /* Semi Bold */
+    font-size: 20px;
+    line-height: auto;
+    letter-spacing: 0;
+}
+
+.text-regular {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    /* Medium */
+    font-size: 20px;
+    line-height: auto;
+    letter-spacing: 0;
+}
+
+/* 3. Body Styles */
+.text-regular-normal {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 400;
+    /* Regular */
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0;
+}
+
+.text-body-medium {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    /* Medium */
+    font-size: 18px;
+    line-height: auto;
+    letter-spacing: 0;
+}
+
+.text-small-regular {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 400;
+    /* Regular */
+    font-size: 14px;
+    line-height: auto;
+    letter-spacing: 0;
+}
+
+.text-small-italic {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 400;
+    /* Regular */
+    font-size: 14px;
+    font-style: italic;
+    line-height: auto;
+    letter-spacing: 0;
+}
