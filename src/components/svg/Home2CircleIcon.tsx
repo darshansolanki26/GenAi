@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const HomeCircleIcon = (props: React.SVGProps<SVGSVGElement>) => (
+const Home2CircleIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg
         viewBox="0 0 500 500"
         fill="none"
@@ -72,4 +72,4 @@ const HomeCircleIcon = (props: React.SVGProps<SVGSVGElement>) => (
     </svg>
 );
 
-export default HomeCircleIcon;
+export default Home2CircleIcon;

@@ -1,9 +1,5 @@
-import { Button } from './ui/Button';
-import HomeCircle from './svg/HomeCircleIcon';
-import WriteBlogsFasterIcon from './svg/WriteBlogsFasterIcon';
-import MessageIcon from './svg/MessageIcon';
-import WhiteSparkles from './svg/WhiteSparkles';
-import MailIcon from './svg/MailIcon';
+import { Button } from '../ui/Button';
+import { Home2CircleIcon, WriteBlogsFasterIcon, MessageIcon, SparklesWhite, MailIcon } from '../svg';
 
 export function Hero() {
     return (
@@ -11,7 +7,7 @@ export function Hero() {
             bg-[linear-gradient(180deg,#0B1020_0%,#5B5CFF_100%)]">
 
             {/* Floating Background Element */}
-            <HomeCircle
+            <Home2CircleIcon
                 className="absolute -left-32 top-1/4 hidden xl:block animate-bounce [animation-duration:3s] w-[500px] h-[500px]"
             />
 
@@ -23,12 +19,12 @@ export function Hero() {
                     border border-white/20 bg-white/10 text-xs text-white mb-8
                     backdrop-blur-md relative overflow-hidden group">
 
-                    <div className="absolute inset-0 bg-gradient-to-r
+                    <div className="absolute inset-0 bg-linear-to-r
                         from-transparent via-white/10 to-transparent
                         -translate-x-full group-hover:translate-x-full
                         transition-transform duration-1000" />
 
-                    <WhiteSparkles height={12} width={12} />
+                    <SparklesWhite height={12} width={12} />
                     <span className="text-small-regular">Create Faster with AI</span>
                 </div>
 
@@ -56,7 +52,7 @@ export function Hero() {
                 {/* CTA */}
                 <Button
                     size="lg"
-                    className="rounded-full px-10 py-7 bg-white text-[#4F46E5]
+                    className="text-primary rounded-full px-10 py-7 bg-white
                         hover:bg-white/90 font-bold text-lg
                         shadow-[0_10px_30px_rgba(255,255,255,0.2)]
                         transition-all hover:scale-105 active:scale-95"
@@ -76,7 +72,7 @@ export function Hero() {
                         flex items-center justify-center text-blue-600">
                         <WriteBlogsFasterIcon height={24} width={24} fill="currentColor" />
                     </div>
-                    <span className="text-[#3730A3] font-semibold text-base">
+                    <span className="text-primary font-semibold text-base">
                         Write Blogs 10X Faster
                     </span>
                 </div>
@@ -88,7 +84,7 @@ export function Hero() {
                         flex items-center justify-center text-purple-600">
                         <MessageIcon height={24} width={24} fill="currentColor" />
                     </div>
-                    <span className="text-[#5B21B6] font-semibold text-base">
+                    <span className="text-primary font-semibold text-base">
                         Write Higher Converting Posts
                     </span>
                 </div>
@@ -100,7 +96,7 @@ export function Hero() {
                         flex items-center justify-center text-indigo-600">
                         <MailIcon height={24} width={24} fill="currentColor" />
                     </div>
-                    <span className="text-[#3730A3] font-semibold text-base">
+                    <span className="text-primary font-semibold text-base">
                         Write More Engaging Emails
                     </span>
                 </div>

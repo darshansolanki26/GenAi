@@ -1,7 +1,5 @@
 import { ArrowUpRight } from 'lucide-react';
-import BlackSparkles from './svg/BlackSparkles';
-import AiSparkleWhite from './svg/AiSparkleWhite';
-import AiSparkleBlack from './svg/AiSparkleBlack';
+import { SparklesBlack as BlackSparkles, AiSparkleWhite, AiSparkleBlack } from '../svg';
 
 export function AppIntegration() {
     return (
@@ -23,10 +21,10 @@ export function AppIntegration() {
                         rounded-full border border-gray-200 bg-gray-50
                         text-xs text-gray-500 mb-4">
                         <BlackSparkles height={12} width={12} />
-                        <span>Features of AI</span>
+                        <span className='text-small-regular'>Features of AI</span>
                     </div>
 
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 max-w-3xl mx-auto">
+                    <h2 className="text-sub-title font-bold text-gray-900 max-w-3xl mx-auto">
                         Write With AI : Instant Copy in All Your Favourite Apps
                     </h2>
                 </div>
@@ -42,7 +40,7 @@ export function AppIntegration() {
                             className="absolute inset-0 w-full h-full object-cover opacity-60
                                 group-hover:scale-105 transition duration-500"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t
+                        <div className="absolute inset-0 
                             from-black/80 via-black/30 to-transparent" />
 
                         <div className="absolute top-6 right-6">
@@ -56,10 +54,10 @@ export function AppIntegration() {
                             <div className="flex items-center gap-2 mb-2">
                                 <AiSparkleWhite height={32} width={32} />
                             </div>
-                            <h3 className="text-xl font-bold mb-2">
+                            <h3 className="text-mid-title mb-2">
                                 Create AI-Driven Content.
                             </h3>
-                            <p className="text-xs text-gray-300 leading-relaxed">
+                            <p className="text-regular-normal text-gray-300 leading-relaxed">
                                 Effective content starts with a clear audience. Define who
                                 you are targeting and understand their needs.
                             </p>
@@ -81,11 +79,11 @@ export function AppIntegration() {
                         </div>
 
                         <div>
-                            <AiSparkleBlack height={32} width={32} className="text-black mb-6" />
-                            <h3 className="text-lg font-bold text-gray-900 mb-3">
+                            <AiSparkleBlack height={32} width={32} className=" mb-6" />
+                            <h3 className="text-mid-title text-black mb-3">
                                 Create AI-Driven Content.
                             </h3>
-                            <p className="text-sm text-gray-500 leading-relaxed">
+                            <p className="text-regular-normal text-gray-500 leading-relaxed">
                                 Define your audience, clarify intent, and build
                                 high-impact content that converts faster.
                             </p>
@@ -107,11 +105,11 @@ export function AppIntegration() {
                         </div>
 
                         <div>
-                            <AiSparkleBlack height={32} width={32} className="text-black mb-6" />
-                            <h3 className="text-lg font-bold text-gray-900 mb-3">
+                            <AiSparkleBlack height={32} width={32} className=" mb-6" />
+                            <h3 className="text-mid-title text-black mb-3">
                                 Create AI-Driven Content.
                             </h3>
-                            <p className="text-sm text-gray-500 leading-relaxed">
+                            <p className="text-regular-normal text-gray-500 leading-relaxed">
                                 Generate consistent messaging across platforms
                                 using AI-powered writing workflows.
                             </p>

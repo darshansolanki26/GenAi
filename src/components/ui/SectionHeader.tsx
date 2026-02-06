@@ -1,5 +1,5 @@
 import type { SectionHeaderProps } from '../../types';
-import BlackSparkles from '../svg/BlackSparkles';
+import { SparklesBlack as BlackSparkles } from '../svg';
 
 export function SectionHeader({
     badge,

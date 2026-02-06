@@ -1,0 +1,57 @@
+@layer components {
+  /* =========================
+     BACKGROUNDS
+  ========================== */
+
+  .bg-primary {
+    background-color: rgb(var(--primary-1) / var(--tw-bg-opacity, 1));
+  }
+
+  .bg-secondary {
+    background-color: rgb(var(--secondary-1) / var(--tw-bg-opacity, 1));
+  }
+
+  .bg-surface-1 {
+    background-color: rgb(var(--surface-1) / var(--tw-bg-opacity, 1));
+  }
+
+  .bg-surface-2 {
+    background-color: rgb(var(--surface-2) / var(--tw-bg-opacity, 1));
+  }
+
+  .bg-background {
+    background-color: rgb(var(--background) / var(--tw-bg-opacity, 1));
+  }
+
+  /* =========================
+     TEXT COLORS
+  ========================== */
+
+  .text-primary {
+    color: rgb(var(--primary-1) / var(--tw-text-opacity, 1));
+  }
+
+  .text-secondary {
+    color: rgb(var(--secondary-1) / var(--tw-text-opacity, 1));
+  }
+
+  .text-default {
+    color: rgb(var(--default-1) / var(--tw-text-opacity, 1));
+  }
+
+  .text-muted {
+    color: rgb(var(--surface-2) / var(--tw-text-opacity, 1));
+  }
+
+  /* =========================
+     BORDERS
+  ========================== */
+
+  .border-primary {
+    border-color: rgb(var(--primary-1) / var(--tw-border-opacity, 1));
+  }
+
+  .border-surface {
+    border-color: rgb(var(--surface-1) / var(--tw-border-opacity, 1));
+  }
+}

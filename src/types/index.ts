@@ -57,6 +57,7 @@ export interface PricingCardProps {
     buttonText?: string;
     buttonHref?: string;
     isPopular?: boolean;
+    position?: 'left' | 'center' | 'right';
     onButtonClick?: () => void;
     onClick?: () => void;
 }
@@ -95,7 +96,7 @@ export interface FooterColumn {
 
 // Footer Props
 export interface FooterProps {
-    logo?: string;
+    logo?: ReactNode;
     description?: string;
     columns: FooterColumn[];
     socialLinks?: {

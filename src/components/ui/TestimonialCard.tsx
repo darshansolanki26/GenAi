@@ -1,4 +1,5 @@
 import type { TestimonialCardProps } from '../../types';
+import { cn } from '../../lib/utils';
 
 export function TestimonialCard({
     rating,
@@ -13,7 +14,12 @@ export function TestimonialCard({
     const stars = Array.from({ length: 5 }, (_, i) => (
         <span
             key={i}
-            className={i < rating ? 'text-yellow-400' : 'text-gray-300'}
+            className={cn(
+                "text-lg",
+                i < rating
+                    ? (isPrimary ? 'text-brand-blue' : 'text-[#1B1F4A]')
+                    : (isPrimary ? 'text-white/20' : 'text-gray-300')
+            )}
         >
             ★
         </span>
@@ -22,53 +28,49 @@ export function TestimonialCard({
     return (
         <div
             onClick={onClick}
-            className={`
-        relative p-6 rounded-2xl cursor-pointer
-        transition-all duration-300 hover:shadow-lg
-        min-w-[280px] md:min-w-[320px]
-        ${isPrimary
-                    ? 'bg-[#5B5CFF] text-white'
-                    : 'bg-white border border-gray-100 text-gray-900'
-                }
-      `}
+            className={cn(
+                "relative p-8 md:p-10 rounded-[30px] cursor-pointer transition-all duration-300 w-[350px] md:w-[420px] shrink-0 flex flex-col gap-6",
+                isPrimary
+                    ? "bg-[#1B1F4A] text-white shadow-2xl"
+                    : "bg-white border border-gray-100 text-[#1B1F4A] shadow-[0_4px_25px_rgba(0,0,0,0.05)]"
+            )}
         >
             {/* Rating Stars */}
-            <div className="flex gap-1 mb-4 text-sm">{stars}</div>
+            <div className="flex gap-1">{stars}</div>
 
             {/* Content */}
             <p
-                className={`
-          text-sm leading-relaxed mb-6
-          ${isPrimary ? 'text-white/90' : 'text-gray-600'}
-        `}
+                className={cn(
+                    "text-base md:text-lg leading-relaxed grow",
+                    isPrimary ? "text-white/90" : "text-[#1B1F4A]/80 font-medium"
+                )}
             >
                 {content}
             </p>
 
             {/* Author */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-4 pt-4">
                 {author.avatar ? (
                     <img
                         src={author.avatar}
                         alt={author.name}
-                        className="w-10 h-10 rounded-full object-cover"
+                        className="w-12 h-12 rounded-full object-cover border-2 border-white/10"
                     />
                 ) : (
                     <div
-                        className={`
-              w-10 h-10 rounded-full flex items-center justify-center
-              text-sm font-semibold
-              ${isPrimary ? 'bg-white/20 text-white' : 'bg-gray-100 text-gray-600'}
-            `}
+                        className={cn(
+                            "w-12 h-12 rounded-full flex items-center justify-center text-lg font-bold",
+                            isPrimary ? "bg-white/10 text-white" : "bg-gray-100 text-[#1B1F4A]"
+                        )}
                     >
                         {author.name.charAt(0)}
                     </div>
                 )}
-                <div>
-                    <p className={`font-semibold text-sm ${isPrimary ? 'text-white' : 'text-gray-900'}`}>
+                <div className="flex flex-col">
+                    <p className={cn("font-bold text-base md:text-lg", isPrimary ? "text-white" : "text-[#1B1F4A]")}>
                         {author.name}
                     </p>
-                    <p className={`text-xs ${isPrimary ? 'text-white/70' : 'text-gray-500'}`}>
+                    <p className={cn("text-sm", isPrimary ? "text-white/60" : "text-gray-400 font-medium")}>
                         {author.role}
                     </p>
                 </div>

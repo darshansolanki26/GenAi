@@ -1,0 +1,36 @@
+@layer base {
+  :root {
+    /* =========================
+       LIGHT MODE COLORS
+    ========================== */
+
+    /* Main */
+    --primary-1: 91 92 255;     /* #5B5CFF */
+    --secondary-1: 27 31 74;      /* #1B1F4A */  
+
+    --background: 249 249 255;  /* #F9F9FF */
+    --default-1: 11 10 32;      /* #0B1020 */ 
+    --default-2: 255 255 255;    /* #FFFFFF */ 
+
+    /* Base */
+    --surface-1: 208 208 208;   /* #D0D0D0 */
+    --surface-2: 161 161 161;   /* #A1A1A1 */
+
+    --light-blue-1: 222 222 255; /* #DEDEFF */
+    --light-blue-2: 157 157 255; /* #9D9DFF */
+
+    /* Gradients (as colors, not full gradient yet) */
+    --gradient-light: 249 249 255;
+  }
+
+  /* =========================
+     DARK MODE COLORS
+  ========================== */
+  .dark {
+    --primary-1: 55 55 173;   /* #3737AD */
+    --primary-2: 157 218 210; /* #9DADD2 */
+
+    --background: 11 10 32;   /* dark background */
+    --text-primary: 249 249 255;
+  }
+}
