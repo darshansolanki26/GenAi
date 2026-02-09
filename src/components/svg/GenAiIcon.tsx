@@ -3,7 +3,7 @@ import type { JSX } from "react/jsx-runtime";
 const GenAiIcon = (props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
     <svg
         width={120}
-        height={26}
+        height={25.42}
         viewBox="0 0 120 26"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

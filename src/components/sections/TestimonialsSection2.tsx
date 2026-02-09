@@ -11,7 +11,7 @@ interface TestimonialsSectionProps {
     testimonials: TestimonialCardProps[];
 }
 
-export function TestimonialsSection({
+export function TestimonialsSection2({
     badge = 'Reviews',
     title,
     subtitle,

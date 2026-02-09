@@ -1,31 +1,34 @@
 import { Button } from '../ui/Button';
 import { Home2CircleIcon, WriteBlogsFasterIcon, MessageIcon, SparklesWhite, MailIcon } from '../svg';
+import Background from '../ui/BackGround';
 
-export function Hero() {
+export function Hero2() {
     return (
         <section className="relative overflow-hidden px-4 pt-48 pb-32
             bg-[linear-gradient(180deg,#0B1020_0%,#5B5CFF_100%)]">
 
+            {/* Background SVGs*/}
+            <Background /> 
+
             {/* Floating Background Element */}
             <Home2CircleIcon
-                className="absolute -left-32 top-1/4 hidden xl:block animate-bounce [animation-duration:3s] w-[500px] h-[500px]"
+                className="absolute -left-26.25 top-79.25 hidden xl:block animate-bounce [animation-duration:3s]"
             />
 
             {/* Main Content */}
-            <div className="max-w-4xl mx-auto text-center relative z-10 pt-20">
+            <div className="max-w-4xl mx-auto text-center relative z-10 pt-10.25">
 
                 {/* Pill Label */}
-                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full
-                    border border-white/20 bg-white/10 text-xs text-white mb-8
+                <div className="inline-flex items-center gap-1 px-4 py-2.5 rounded-[10px]
+                    border border-white bg-white/10 text-xs text-white mb-8
                     backdrop-blur-md relative overflow-hidden group">
 
                     <div className="absolute inset-0 bg-linear-to-r
                         from-transparent via-white/10 to-transparent
-                        -translate-x-full group-hover:translate-x-full
-                        transition-transform duration-1000" />
+                        -translate-x-full" />
 
-                    <SparklesWhite height={12} width={12} />
-                    <span className="text-small-regular">Create Faster with AI</span>
+                    <SparklesWhite height={20} width={20} />
+                    <span className="text-small-regular leading-[18px]">Create Faster with AI</span>
                 </div>
 
                 {/* Heading */}

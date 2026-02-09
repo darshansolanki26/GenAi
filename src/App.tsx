@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Layout } from './components/layout/Layout';
-import Home1 from './pages/Home1';
 import Home2 from './pages/Home2';
+import Home1 from './pages/Home1';
 import { PlaceholderPage } from './pages/PlaceholderPage';
 
 function App() {

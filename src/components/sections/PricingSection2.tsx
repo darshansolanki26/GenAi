@@ -9,7 +9,7 @@ interface PricingSectionProps {
     plans: PricingCardProps[];
 }
 
-export function PricingSection({
+export function PricingSection2({
     badge = 'Pricing',
     title,
     plans,

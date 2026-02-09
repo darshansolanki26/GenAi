@@ -31,7 +31,7 @@ const faqs = [
     }
 ];
 
-export function FAQSection2() {
+export function FAQSection() {
     const [openId, setOpenId] = useState<number | null>(1);
 
     return (

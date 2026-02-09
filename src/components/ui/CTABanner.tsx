@@ -10,15 +10,11 @@ export function CTABanner({
 }: CTABannerProps) {
     return (
         <div
-            className="
-        bg-white relative overflow-hidden rounded-2xl md:rounded-3xl
-        mx-4 md:mx-8 lg:mx-16 my-12 md:my-20
-      "
+            className=" bg-white relative overflow-hidden rounded-2xl md:rounded-3xl mx-4 md:mx-8 lg:mx-16 my-12 md:my-20"
         >
             {/* Background */}
             <div
-                className="
-          absolute inset-0 bg-cover bg-center
+                className=" absolute inset-0 bg-cover bg-center
           before:absolute before:inset-0 before:bg-[#5B5CFF]/80
         "
                 style={{

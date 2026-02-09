@@ -13,7 +13,7 @@ interface UseCasesSectionProps {
     onReadMoreClick?: () => void;
 }
 
-export function UseCasesSection({
+export function UseCasesSection2({
     badge = 'GenAI Use Cases',
     title,
     useCases,

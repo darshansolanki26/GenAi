@@ -1,7 +1,7 @@
 import { ArrowUpRight } from 'lucide-react';
 import { SparklesBlack as BlackSparkles, AiSparkleWhite, AiSparkleBlack } from '../svg';
 
-export function AppIntegration() {
+export function AppIntegration2() {
     return (
         <section
             className="

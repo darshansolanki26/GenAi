@@ -2,7 +2,7 @@ import { Check, Star, Users } from 'lucide-react';
 import { SparklesBlack as BlackSparkles } from '../../svg';
 import { Button } from '../../ui/Button';
 
-export function AboutSection2() {
+export function AboutSection() {
     return (
         <section className="relative w-full bg-white py-24 md:py-32 overflow-hidden">
             <div className="max-w-[1400px] w-full mx-auto px-6 lg:px-10">

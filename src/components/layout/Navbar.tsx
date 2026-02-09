@@ -28,9 +28,9 @@ export function Navbar() {
         <nav
             className="
                 relative mx-auto z-50 flex items-center justify-between
-                w-[95%] max-w-[1600px] h-[80px]
+                w-[95%] max-w-[1600px] max-h-[80px]
                 px-6 md:px-[70px] py-[14px]
-                bg-white/10 backdrop-blur-xl
+                bg-white/20 backdrop-blur-xl
                 border border-white/20 rounded-[20px]
                 shadow-[0_2px_8px_rgba(0,0,0,0.25)]
                 transition-all duration-300
@@ -42,21 +42,21 @@ export function Navbar() {
             </Link>
 
             {/* Desktop Links container */}
-            <div className="hidden lg:flex items-center justify-center gap-8 w-auto font-medium text-white/90 flex-nowrap">
+            <div className="hidden lg:flex items-center justify-center gap-8 w-auto flex-nowrap">
                 {/* Home Link with Dropdown */}
                 <div className="relative group/home">
-                    <div className="group flex items-center text-regular cursor-pointer py-4 transition-all duration-300">
+                    <div className="group flex items-center cursor-pointer py-4 transition-all duration-300">
                         <Dot className="absolute opacity-0 translate-x-4 group-hover/home:opacity-100 group-hover/home:translate-x-0 transition-all duration-300 shrink-0" />
-                        <span className="flex items-center gap-1 translate-x-0 group-hover/home:translate-x-4 transition-transform duration-300 whitespace-nowrap">
+                        <span className="text-regular flex items-center gap-1 translate-x-0 group-hover/home:translate-x-4 transition-transform duration-300 whitespace-nowrap">
                             Home <ChevronDownIcon height={16} width={16} />
                         </span>
                     </div>
                     {/* Home Dropdown Menu */}
-                    <div className="absolute top-[calc(100%-10px)] left-1/2 -translate-x-1/2 lg:-translate-x-[50%] w-[90vw] max-w-[600px] opacity-0 invisible group-hover/home:opacity-100 group-hover/home:visible transition-all duration-300 ease-out z-100 pt-6">
-                        <div className="w-full bg-[#1b1f4a]/90 backdrop-blur-2xl border border-white/20 rounded-[30px] p-6 shadow-2xl flex flex-col gap-6">
-                            <div className="grid grid-cols-2 gap-6">
-                                <Link to="/home-1" className="group/item flex flex-col gap-3" onClick={() => setIsHomeDropdownOpen(false)}>
-                                    <div className={`relative w-full aspect-video rounded-[20px] overflow-hidden border ${isActive('/home-1') ? 'border-brand-blue border-2' : 'border-white/10'} shadow-inner bg-black/40`}>
+                    <div className="absolute pt-5 top-full mt-[20px] max-w-[690px] h-[546px] opacity-0 invisible group-hover/home:opacity-100 group-hover/home:visible transition-all duration-300 ease-out z-100 ">
+                        <div className="w-full bg-[#1b1f4a]/90 h-[546px] backdrop-blur-2xl border border-white/20 rounded-[30px] p-6 shadow-2xl flex flex-col gap-6">
+                            <div className="grid grid-cols-2 gap-6 h-[474px]">
+                                <Link to="/home-1" className="group/item flex flex-col gap-5" onClick={() => setIsHomeDropdownOpen(false)}>
+                                    <div className={`relative w-full aspect-video h-[440px] rounded-[20px] overflow-hidden border ${isActive('/home-1') ? 'border-brand-blue border-2' : 'border-white/10'} shadow-inner bg-black/40`}>
                                         <img
                                             src="/home_page_1.png"
                                             alt="Home Page 1"
@@ -66,7 +66,7 @@ export function Navbar() {
                                     </div>
                                     <p className={`text-[16px] font-medium text-center ${isActive('/home-1') ? 'text-white' : 'text-white/70 group-hover/item:text-white'} transition-colors`}>Home Page 1</p>
                                 </Link>
-                                <Link to="/home-2" className="group/item flex flex-col gap-3" onClick={() => setIsHomeDropdownOpen(false)}>
+                                <Link to="/home-2" className="group/item flex flex-col gap-5" onClick={() => setIsHomeDropdownOpen(false)}>
                                     <div className={`relative w-full aspect-video rounded-[20px] overflow-hidden border ${isActive('/home-2') ? 'border-brand-blue border-2' : 'border-white/10'} shadow-inner bg-black/40`}>
                                         <img
                                             src="/home_page_2.png"
@@ -92,7 +92,7 @@ export function Navbar() {
                     </div>
                     {/* Pages Dropdown Menu */}
                     <div className="absolute top-[calc(100%-10px)] left-1/2 -translate-x-1/2 lg:-translate-x-[15%] w-[90vw] max-w-[452px] opacity-0 invisible group-hover/pages:opacity-100 group-hover/pages:visible transition-all duration-300 ease-out z-100 pt-6">
-                        <div className="w-full bg-[#1b1f4a]/90 backdrop-blur-2xl border border-white/20 rounded-[30px] p-8 shadow-2xl">
+                        <div className="w-full bg-[#000000]/25 backdrop-blur-2xl border border-white/20 rounded-[30px] p-8 shadow-2xl">
                             <div className="grid grid-cols-2 gap-x-12 gap-y-4">
                                 {pagesLinks.map((link, idx) => (
                                     <Link key={idx} to={link.href} className="text-[14px] text-white/70 hover:text-white transition-colors whitespace-nowrap flex items-center gap-2 group/link">
@@ -143,10 +143,10 @@ export function Navbar() {
                         flex items-center justify-center
                         w-[165px] h-[52px]
                         rounded-[10px]
-                        border border-white bg-transparent
-                        text-white
-                        hover:bg-white/10 transition-all active:scale-95
-                        px-[26px] py-[16px]
+                        border border-default-2 bg-transparent
+                        text-default-2
+                        hover:bg-default-2 hover:text-primary-1 transition-all active:scale-95
+                        px-[26px] py-[13px]
                         gap-[10px]
                     "
                 >

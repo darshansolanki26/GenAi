@@ -25,7 +25,7 @@ const featureCards = [
     }
 ];
 
-export function AppIntegration2() {
+export function AppIntegration() {
     return (
         <section className="relative w-full bg-[#DEDEFF] py-24 md:py-32 overflow-hidden px-6">
             <div className="max-w-[1400px] w-full mx-auto">

@@ -1,6 +1,6 @@
 import { Button } from '../../ui/Button';
 
-export function CTABanner2() {
+export function CTABanner() {
     return (
         <section className="relative w-full py-24 px-6 overflow-hidden">
             <div className="max-w-[1400px] w-full mx-auto">

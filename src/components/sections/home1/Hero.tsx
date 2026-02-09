@@ -1,7 +1,7 @@
 import { Button } from '../../ui/Button';
 import { FeaturesSectionDecorativeScribble } from '../../svg';
 
-export function Hero2() {
+export function Hero() {
     return (
         <section className="relative overflow-hidden px-4 pt-48 pb-16 bg-white">
             {/* Background Gradient Mesh */}

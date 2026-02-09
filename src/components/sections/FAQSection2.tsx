@@ -11,7 +11,7 @@ interface FAQSectionProps {
     defaultOpenId?: string | number;
 }
 
-export function FAQSection({
+export function FAQSection2({
     badge = 'FAQ',
     title,
     faqs,

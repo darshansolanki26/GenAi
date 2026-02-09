@@ -1,0 +1,10 @@
+export { Hero } from './Hero';
+export { FeatureSection } from './FeatureSection';
+export { AppIntegration } from './AppIntegration';
+export { AboutSection } from './AboutSection';
+export { UseCasesSection } from './UseCasesSection';
+export { TestimonialsSection } from './TestimonialsSection';
+export { PricingSection } from './PricingSection';
+export { FAQSection } from './FAQSection';
+export { CTABanner } from './CTABanner';
+export { Footer } from './Footer';

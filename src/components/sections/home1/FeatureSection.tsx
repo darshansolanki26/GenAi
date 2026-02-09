@@ -1,18 +1,6 @@
-import type { ReactNode } from 'react';
-import { QualityIcon, BoostIcon, BlubIcon, FeaturesSectionDecorativeScribble } from '../svg';
+import { QualityIcon, BoostIcon, BlubIcon, FeaturesSectionDecorativeScribble } from '../../svg';
 
-interface Feature {
-    icon: ReactNode;
-    title: string;
-    desc: string;
-    bg?: string;
-}
-
-interface FeatureSectionProps {
-    features?: Feature[];
-}
-
-const defaultFeatures: Feature[] = [
+const features = [
     {
         icon: <QualityIcon height={56} width={56} className="text-brand-blue" />,
         title: "Generates Quality Contents",
@@ -33,46 +21,23 @@ const defaultFeatures: Feature[] = [
     }
 ];
 
-export function FeatureSection({ features = defaultFeatures }: FeatureSectionProps) {
+export function FeatureSection() {
     return (
-        <section
-            className="relative w-full bg-[#DEDEFF] py-16 sm:py-24 flex items-center px-4 sm:px-8 lg:px-16"
-        >
-            {/* Content Wrapper */}
+        <section className="relative w-full bg-[#DEDEFF] py-24 px-6">
             <div className="max-w-[1400px] w-full mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-
                     {features.map((feature, idx) => (
                         <div
                             key={idx}
-                            className="
-                                group relative
-                                bg-white/40
-                                backdrop-blur-md
-                                p-8 sm:p-10
-                                rounded-[32px]
-                                border border-white/40
-                                shadow-[0_4px_24px_rgba(0,0,0,0.05)]
-                                transition-all duration-500
-                                hover:-translate-y-2
-                                hover:shadow-[0_20px_40px_rgba(0,0,0,0.1)]
-                                hover:bg-white/60
-                            "
+                            className="bg-white/40 backdrop-blur-md p-10 rounded-[40px] border border-white/20 shadow-xl hover:-translate-y-2 transition-all duration-500 group text-center"
                         >
-                            <div
-                                className={`w-20 h-20 ${feature.bg || 'bg-white'}
-                                rounded-2xl flex items-center
-                                justify-center mb-8 mx-auto
-                                shadow-sm group-hover:scale-110 transition-transform duration-500`}
-                            >
+                            <div className="w-20 h-20 bg-white rounded-3xl flex items-center justify-center mb-10 mx-auto shadow-sm group-hover:scale-110 transition-transform duration-500">
                                 {feature.icon}
                             </div>
-
-                            <h3 className="text-xl sm:text-2xl font-bold text-center text-brand-blue mb-4">
+                            <h3 className="text-2xl font-bold text-brand-blue mb-4">
                                 {feature.title}
                             </h3>
-
-                            <p className="text-[#0B1020]/70 text-base sm:text-lg text-center leading-relaxed">
+                            <p className="text-[#1b1f4a]/70 text-base leading-relaxed">
                                 {feature.desc}
                             </p>
                         </div>

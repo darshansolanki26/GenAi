@@ -44,7 +44,7 @@ const plans = [
     }
 ];
 
-export function PricingSection2() {
+export function PricingSection() {
     return (
         <section className="relative w-full bg-[#DEDEFF] py-24 md:py-32 px-6">
             <div className="max-w-[1400px] w-full mx-auto flex flex-col items-center">

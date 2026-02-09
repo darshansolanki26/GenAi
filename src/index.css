@@ -15,6 +15,17 @@
 
     --color-brand-blue: #5B5CFF;
     --color-brand-dark: #0d0b21;
+
+    /* Custom Colors from theme.css */
+    --color-primary-1: #5B5CFF;
+    --color-secondary-1: #1B1F4A;
+    --color-background: #F9F9FF;
+    --color-default-1: #0B1020;
+    --color-default-2: #FFFFFF;
+    --color-surface-1: #D0D0D0;
+    --color-surface-2: #A1A1A1;
+    --color-light-blue-1: #DEDEFF;
+    --color-light-blue-2: #9D9DFF;
 }
 
 @layer base {
@@ -35,6 +46,7 @@
 @layer utilities {
 
     /* Custom Typography Classes with high specificity */
+    /* 1. Title Styles */
     .text-extra-large {
         font-family: "Plus Jakarta Sans", sans-serif !important;
         font-weight: 600;
@@ -59,6 +71,8 @@
         line-height: 1.3;
         letter-spacing: -0.01em;
     }
+
+    /* 2. Subhead Styles */
 
     .text-mid-title {
         font-family: "Plus Jakarta Sans", sans-serif !important;
@@ -85,10 +99,12 @@
     .text-regular {
         font-family: "Plus Jakarta Sans", sans-serif !important;
         font-weight: 500;
-        font-size: clamp(16px, 1.8vw, 18px);
+        font-size: clamp(16px, 1.8vw, 20px);
         /* Adjusted to be slightly smaller than medium */
         line-height: 1.5;
     }
+
+    /* 3. Body Styles */
 
     .text-regular-normal {
         font-family: "Plus Jakarta Sans", sans-serif !important;
@@ -118,6 +134,8 @@
         font-style: italic;
         line-height: 1.5;
     }
+
+    /* DancingScript-SemiBold */
 
     .text-dancing-script-semibold {
         font-family: "DancingScript", cursive !important;

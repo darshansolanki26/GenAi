@@ -3,7 +3,7 @@ import { SparklesBlack as BlackSparkles, Check } from '../svg';
 import { cn } from '../../lib/utils';
 import { Button } from '../ui/Button';
 
-export function AboutSection({
+export function AboutSection2({
     badge = 'About Us',
     title,
     description,

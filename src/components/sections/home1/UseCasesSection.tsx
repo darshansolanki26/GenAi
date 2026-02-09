@@ -4,7 +4,7 @@ import { Button } from '../../ui/Button';
 import { useCasesData } from '../../../constants/siteData';
 import type { UseCaseCardProps } from '../../../types';
 
-export function UseCasesSection2() {
+export function UseCasesSection() {
     return (
         <section className="relative w-full bg-white py-24 md:py-32 overflow-hidden">
             <div className="max-w-[1400px] w-full mx-auto px-6 lg:px-10 relative z-10">

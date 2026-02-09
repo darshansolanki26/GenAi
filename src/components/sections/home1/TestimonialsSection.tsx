@@ -37,7 +37,7 @@ const testimonials = [
     }
 ];
 
-export function TestimonialsSection2() {
+export function TestimonialsSection() {
     const scrollRef = useRef<HTMLDivElement>(null);
 
     const scroll = (direction: 'left' | 'right') => {

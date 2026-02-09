@@ -2,7 +2,7 @@ import { Instagram, Facebook, Twitter, Linkedin } from 'lucide-react';
 import { GenAiIcon } from '../../svg';
 import { Button } from '../../ui/Button';
 
-export function Footer2() {
+export function Footer() {
     return (
         <footer className="w-full bg-brand-dark pt-24 pb-12 px-6 overflow-hidden">
             <div className="max-w-[1400px] w-full mx-auto">

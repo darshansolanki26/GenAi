@@ -21,17 +21,25 @@ export function Footer({
     };
 
     return (
-        <footer className="w-full bg-[rgba(27,31,74,1)] text-white">
+        <footer className="relative w-full bg-[rgba(27,31,74,1)] text-white overflow-hidden">
+            {/* Background Grid */}
+            <div className="absolute bottom-0 pointer-events-none">
+                <img 
+                    src="/FooterGrid.png" 
+                    alt="" 
+                    className="w-227.5 h-54.5 object-cover" 
+                />
+            </div>
             {/* Main Footer Content */}
-            <div className="max-w-[1920px] w-full mx-auto px-6 lg:px-20 py-12 md:py-16">
+            <div className="relative z-10 max-w-[1920px] w-full mx-auto px-6 lg:px-20 py-12 md:py-25">
                 <div className="flex flex-col lg:flex-row items-start">
 
                     {/* Left Section: Logo & Newsletter Column (930px) */}
                     <div className="w-full lg:w-[930px] lg:pr-20 mb-12 lg:mb-0">
                         <div className="max-w-[465px]">
-                            <h3 className="text-2xl font-bold mb-4">{logo}</h3>
+                            <h3 className="text-2xl font-bold mb-5">{logo}</h3>
                             {description && (
-                                <p className="text-regular-normal text-white text-sm leading-relaxed mb-6 opacity-80">
+                                <p className="text-regular-normal text-white text-sm leading-relaxed mb-13.5 opacity-80">
                                     {description}
                                 </p>
                             )}
@@ -39,19 +47,30 @@ export function Footer({
                             {/* Newsletter Form */}
                             {newsletter && (
                                 <form onSubmit={handleNewsletterSubmit} className="mb-8">
-                                    <div className="flex gap-2">
+                                    <div className="flex gap-7.5">
                                         <input
                                             type="email"
                                             value={email}
                                             onChange={(e) => setEmail(e.target.value)}
                                             placeholder={newsletter.placeholder || 'Email'}
                                             className="
-                      flex-1 px-4 py-2.5 rounded-lg
-                      bg-transparent border border-gray-600
-                      text-white text-sm
-                      placeholder:text-gray-500
-                      focus:outline-none focus:border-white
-                      transition-colors
+                     flex-1 px-5 py-3.25
+          rounded-[10px]
+
+          bg-white/10
+          backdrop-blur-md
+          border border-white/20
+
+          text-white text-sm
+          placeholder:text-gray-400
+
+          focus:outline-none
+          focus:border-white/40
+
+          shadow-[0_8px_32px_rgba(0,0,0,0.35)]
+          transition-all
+                      
+
                     "
                                             required
                                         />
@@ -78,7 +97,7 @@ export function Footer({
                                             href={socialLinks.instagram}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-400 hover:text-white hover:border-white transition-colors"
+                                            className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center text-gray-400 hover:text-white hover:border-white hover:bg-[#5B5CFF] transition-colors"
                                             aria-label="Instagram"
                                         >
                                             <Instagram height={20} width={20} />
@@ -123,20 +142,20 @@ export function Footer({
                     </div>
 
                     {/* Vertical Divider Line */}
-                    <div className="hidden lg:block w-px h-[367px] bg-[#D0D0D0] mt-[100px]" />
+                    <div className="hidden lg:block w-px h-[367px] bg-[#D0D0D0] " />
 
                     {/* Right Section: Link Columns (990px) */}
                     <div className="w-full lg:w-[990px] lg:pl-[120px] grid grid-cols-2 gap-8 lg:gap-12">
                         {columns.map((column, index) => (
                             <div key={index}>
-                                <h4 className="text-xl font-bold mb-6">{column.title}</h4>
-                                <ul className="space-y-4">
+                                <h4 className="text-sub-title font-bold mb-6">{column.title}</h4>
+                                <ul className="space-y-3.5">
                                     {column.links.map((link, linkIndex) => (
                                         <li key={linkIndex}>
                                             <a
                                                 href={link.href}
                                                 onClick={link.onClick}
-                                                className="relative inline-block text-gray-300 hover:text-white transition-colors after:content-['']
+                                                className="text-regular-normal relative inline-block text-gray-300 hover:text-white transition-colors after:content-['']
     after:absolute
     after:left-0
     after:-bottom-1
@@ -161,7 +180,7 @@ export function Footer({
             </div>
 
             {/* Copyright Bar */}
-            <div className="border-t border-[rgba(161,161,161,1)]">
+            <div className="relative z-10 border-t border-[rgba(161,161,161,1)]">
                 <div className="max-w-[1920px] w-full mx-auto px-6 lg:px-20 py-4">
                     <p className="text-center text-[rgba(161,161,161,1)]
  text-regular-normal leading-[26px] w-full
